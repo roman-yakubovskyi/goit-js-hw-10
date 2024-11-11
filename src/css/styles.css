@@ -106,3 +106,37 @@
   line-height: 1.2;
   letter-spacing: 0.04em;
 }
+
+/* Snackbar */
+fieldset {
+  margin: 24px auto;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+.form {
+  max-width: 360px;
+  margin-top: 50px;
+}
+
+.btn {
+  font-family: inherit;
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 75px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: #4e75ff;
+  cursor: pointer;
+  border: none;
+  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #6c8cff;
+}
