@@ -11,8 +11,98 @@
 @import url('./animations.css');
 
 /* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
 @import url('./back-link.css');
-@import url('./footer.css');
+
+.link-back {
+  font-weight: 700;
+  font-size: 24px;
+  color: rgb(21, 8, 200);
+  margin-bottom: 4px;
+}
+
+/* Timer */
+.input {
+  width: 272px;
+  height: 40px;
+  padding: 8px 16px;
+  outline: none;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-top: 36px;
+  margin-right: 8px;
+}
+
+.input:hover {
+  border: 1px solid #000;
+}
+
+.input:focus-visible {
+  border: 1px solid #4e75ff;
+}
+
+.button {
+  margin-bottom: 32px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background-color: #cfcfcf;
+  color: #989898;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  transition: background-color 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  border: none;
+  width: 75px;
+  height: 40px;
+}
+
+.button-active {
+  background-color: #4e75ff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.button-active:hover {
+  background-color: #6c8cff;
+}
+
+.button-disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+  cursor: not-allowed;
+}
+
+.timer {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  height: 72px;
+  max-width: 346px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.value {
+  width: 55px;
+  height: 48px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+}
